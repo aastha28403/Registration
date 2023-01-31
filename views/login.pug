@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    style 
+         include ../public/style.css
+</head>
+<body method="post">
+    <div>
+        <nav>
+            <ul>
+                <li>LOGIN FORM</li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <main>
+            <h1>PLEASE LOGIN YOURSELF</h1>
+            <H2>Enter your own unique ID!</H2>
+    
+            <form action='/login' id="form" name="myForm" method="post">
+                
+                
+                <div class="form-control" id="usern">
+                <input class="input"  autocomplete="username" type="text" id="username" name="lusername" placeholder="ENTER USERNAME" /><br />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small class="error">error</small>
+                </div>
+
+                <div class="form-control" id="pass">
+                <input class="input" autocomplete="new-password" type="password" id="password" name="lpassword" placeholder="PASSWORD" /><br />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small class="error">error</small>
+                </div>
+                  
+    
+                <input type="submit"  class="l-btn" id="l-btn" >
+            </form>
+            <h3><a href="/">REGISTER YOURSELF</a></h3>
+        </main>
+    </main>
+
+</body>
+</html>

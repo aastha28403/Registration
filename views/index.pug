@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>form</title>
+    style 
+         include ../public/style.css
+    <script>
+
+       
+    </script>
+ 
+</head>
+<body onload ="message()">
+    <div>
+        <nav>
+            <ul>
+                <li> REGISTRATION FORM</li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>PLEASE REGISTER YOURSELF</h1>
+        <H2>Make your own unique ID!</H2>
+
+        <form  id="form" name="myForm" method="post"onsubmit="return validateform()"  >
+
+
+            <div class="form-control" id="firstn">
+            <input class="input" type="text" id="fname" name="fname" placeholder="FIRST NAME" /><br />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small class="error">error</small>
+            </div>
+            <div class="form-control" id="lastn">
+            <input class="input" type="text" id="lname" name="lname" placeholder="LAST NAME" /><br />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small class="error">error</small>
+            </div>
+            <div class="form-control" id="emailId">
+            <input class="input" type="email" id="email" name="email" placeholder="EMAIL ID" /><br />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small class="error">error</small>
+            </div>
+            <div class="form-control" id="phone">
+            <input class="input" type="number" id="number" name="number" placeholder="CONTACT NUMBER" /><br />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small class="error">error</small>
+            </div>
+            <div class="form-control" id="usern">
+            <input class="input"  autocomplete="username" type="text" id="username" name="username" placeholder="CREATE USERNAME" /><br />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small class="error">error</small>
+            </div>
+            <div class="form-control" id="pass">
+            <input class="input" autocomplete="new-password" type="password" id="password" name="password" placeholder="PASSWORD" /><br />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small class="error">error</small>
+            </div>
+            <div class="form-control" id="cpass">
+            <input class="input" autocomplete="new-password" type="password" id="cpassword" name="cpassword" placeholder="CONFIRM PASSWORD" /><br />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>  
+            <small class="error">error</small>
+            </div>    
+
+            <input type="submit" class="btn" id="btn" >
+        </form>
+    </main>
+      <h3><a href="/login">LOGIN FORM</a></h3>
+   
+</body>
+</html>
